@@ -23,11 +23,11 @@ let rsData = [
     rsid: "정돈",
   },
   {
-    rsid: "234",
+    rsid: "마라탕",
   },
   {
     rsid: "345",
-  },
+  }
 ];
 
 let brData = [
