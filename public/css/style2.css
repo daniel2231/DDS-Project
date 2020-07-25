@@ -217,3 +217,8 @@ body{
 .icon{
   margin-bottom:0px;
 }
+
+.img{
+  height:auto;
+  overflow:hidden;
+}
