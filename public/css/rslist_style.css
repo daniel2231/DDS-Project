@@ -1,0 +1,91 @@
+.card-img-top {
+    width: 165px;
+    height: 89px;
+    background-color: #55595c;
+    position: absolute;
+    top:70px;
+    z-index:10;
+  }
+
+  .card-body {
+    width: 165px;
+    height: 110px;
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    position: absolute;
+    top:124px;
+    border-radius: 2%;
+  }
+  .card-title{
+    width: 106px;
+    height: 21px;
+    font-family: HelveticaNeue;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #373a3c;
+    position: absolute;
+    top:42px;
+    left:30px;
+    text-align: center;
+  }
+  .score{
+    width: 25px;
+    height: 12px;
+    font-family: HelveticaNeue;
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #777777;
+    position: absolute;
+    top:61px;
+    left:78px;
+  }
+
+  .star{
+    width: 9.4px;
+    height: 8.9px;
+    color: #5cb85c;
+    position: absolute;
+    top:63.2px;
+    left:68.1px;
+  }
+  .clock{
+    width: 11.2px;
+    height: 14.9px;
+    color: #4b92d9;
+    position: absolute;
+    top:83.2px;
+    left:42.3px;
+  }
+  .now{
+    width: 66px;
+    height: 15px;
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b92d9;
+    position: absolute;
+    top:84px;
+    left:58px;
+
+  }
+
+  body{
+    width:360px;
+    height:640px;
+    text-align: center;
+  }
