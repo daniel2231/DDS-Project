@@ -20,7 +20,7 @@ router.get("/bar", (req, res) => {
 
 let rsData = [
   {
-    rsid: "정돈",
+    rsid: "정돈틀",
   },
   {
     rsid: "마라탕",
