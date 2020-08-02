@@ -37,9 +37,8 @@ bobArr[9]='쪼리닭'
 bobArr[10]='파스타마켓'
 bobArr[11]='혜화칼국수'
 bobArr[12]='호호식당'
-
-function toggleImg() {
-    dat=Math.floor(Math.random()*10);
+function toggleImg(min,max) {
+    dat=Math.floor(Math.random()*(max-min+1));
     document.getElementById("num").innerHTML=dat;
     document.getElementById("img").src = bobImgArr[dat];
     document.getElementById("name").innerHTML=bobArr[dat];
