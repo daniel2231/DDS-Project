@@ -21,6 +21,7 @@ bobImgArr[9]='../public/img/밥집/쪼리닭.jpg'
 bobImgArr[10]='../public/img/밥집/파스타마켓.jpeg'
 bobImgArr[11]='../public/img/밥집/혜화칼국수.jpg'
 bobImgArr[12]='../public/img/밥집/호호식당.jpg'
+bobImgArr[13]='../public/img/밥집/부부식당.jpeg'
 
 var bobArr = new Array(); //배열선언
 bobArr[0]='메밀향그집'
@@ -36,6 +37,7 @@ bobArr[9]='쪼리닭'
 bobArr[10]='파스타마켓'
 bobArr[11]='혜화칼국수'
 bobArr[12]='호호식당'
+bobArr[13]='부부식당'
 
 var bobTelArr = new Array(); //배열선언
 bobTelArr[0]='tel:02-745-3681'
@@ -51,6 +53,7 @@ bobTelArr[9]='tel:02-747-9932'
 bobTelArr[10]='tel:070-4195-7700'
 bobTelArr[11]='tel:02-743-8212'
 bobTelArr[12]='tel:02-741-2384'
+bobTelArr[13]='tel:02-765-6056'
 
 
 function toggleImg(min,max) {

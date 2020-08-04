@@ -183,6 +183,7 @@ body{
 #peopletxt{
   width: 31px;
   height: 15px;
+  margin-bottom:7px;
   font-family: HelveticaNeue;
   font-size: 12px;
   font-weight: normal;
