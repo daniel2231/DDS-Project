@@ -7,7 +7,6 @@
 
 var dat;
 
-
 var bobImgArr = new Array(); //배열선언
 bobImgArr[0]='../public/img/밥집/메밀향그집.jpg'
 bobImgArr[1]='../public/img/밥집/청춘직화.jpeg'
@@ -37,10 +36,26 @@ bobArr[9]='쪼리닭'
 bobArr[10]='파스타마켓'
 bobArr[11]='혜화칼국수'
 bobArr[12]='호호식당'
+
+var bobTelArr = new Array(); //배열선언
+bobTelArr[0]='tel:02-745-3681'
+bobTelArr[1]='tel:02-765-1170'
+bobTelArr[2]='tel:02-764-7778'
+bobTelArr[3]='tel:02-747-5050'
+bobTelArr[4]='tel:02-741-2344'
+bobTelArr[5]='tel:02-747-3005'
+bobTelArr[6]='tel:02-3672-6470'
+bobTelArr[7]='tel:02-742-8594'
+bobTelArr[8]='tel:02-987-0924'
+bobTelArr[9]='tel:02-747-9932'
+bobTelArr[10]='tel:070-4195-7700'
+bobTelArr[11]='tel:02-743-8212'
+bobTelArr[12]='tel:02-741-2384'
+
+
 function toggleImg(min,max) {
     dat=Math.floor(Math.random()*(max-min+1));
-    document.getElementById("num").innerHTML=dat;
     document.getElementById("img").src = bobImgArr[dat];
     document.getElementById("name").innerHTML=bobArr[dat];
+    document.getElementById("phone").href=bobTelArr[dat];
   }
-  document.innerHTML(dat);

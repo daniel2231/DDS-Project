@@ -10,9 +10,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../public/css/res-random.css" />
+      crossorigin="anonymous"/>
+    <script src="../public/js/rand_test_js.js"></script>
+    <link rel="stylesheet" href="../public/css/res-random.css"/>
   </head>
 
   <body>
@@ -56,9 +56,9 @@
     </section>
     <section class="mainbody">
       <div class="card">
-        <img src="../public/default image.jpg" class="card-img-top" alt="..." />
+        <img src="../public/default image.jpg" class="card-img-top" id="img" alt="..." />
         <div class="card-body">
-          <p class="card-text">
+          <p class="card-text"id="name">
             정돈 대학로 본점
           </p>
           <p class="rating">
@@ -76,7 +76,7 @@
                 /></svg></span
             >4.49
           </p>
-          <a class="reserve-link" href="tel:"
+          <a id="phone" class="reserve-link" href="tel:010-3939-8423"
             ><span
               ><svg
                 width="1em"
@@ -103,7 +103,7 @@
       </div>
     </section>
     <section class="retry">
-      <button type="button" class="btn btn-secondary">
+      <button type="button" class="btn btn-secondary" onclick="toggleImg(0,12)">
         <svg
           width="16px"
           height="16px"
