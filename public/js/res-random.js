@@ -32,7 +32,7 @@ bobArr[4]='명륜건강원'
 bobArr[5]='버거파크'
 bobArr[6]='산쪼메'
 bobArr[7]='소친친'
-bobArr[8]='정돈'
+bobArr[8]='정돈 대학로 본점'
 bobArr[9]='쪼리닭'
 bobArr[10]='파스타마켓'
 bobArr[11]='혜화칼국수'
@@ -56,9 +56,27 @@ bobTelArr[12]='tel:02-741-2384'
 bobTelArr[13]='tel:02-765-6056'
 
 
+var bobStarArr = new Array(); //배열선언
+bobStarArr[0]='4.00'
+bobStarArr[1]='4.40'
+bobStarArr[2]='3.70'
+bobStarArr[3]='4.40'
+bobStarArr[4]='4.20'
+bobStarArr[5]='4.30'
+bobStarArr[6]='3.80'
+bobStarArr[7]='4.40'
+bobStarArr[8]='4.40'
+bobStarArr[9]='3.90'
+bobStarArr[10]='4.40'
+bobStarArr[11]='3.90'
+bobStarArr[12]='4.00'
+bobStarArr[13]='3.80'
+
+
 function toggleImg(min,max) {
     dat=Math.floor(Math.random()*(max-min+1));
     document.getElementById("img").src = bobImgArr[dat];
     document.getElementById("name").innerHTML=bobArr[dat];
     document.getElementById("phone").href=bobTelArr[dat];
+    document.getElementById("star").innerHTML=bobStarArr[dat];
   }
