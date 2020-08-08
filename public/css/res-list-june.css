@@ -1,11 +1,11 @@
-body{
-  width:360px;
+body {
+  width: 360px;
   text-align: center;
-  height:640px;
+  height: 640px;
   margin: 0 auto;
 }
 
-#all_list{
+#all_list {
   width: 74px;
   height: 20px;
   font-family: HelveticaNeue;
@@ -16,43 +16,41 @@ body{
   line-height: 1.5;
   letter-spacing: normal;
   text-align: left;
-  margin-top:16px;
-  margin-left:19px;
-  margin-bottom:14px;
+  margin-top: 16px;
+  margin-left: 19px;
+  margin-bottom: 14px;
   color: #343434;
 }
-.star_score{
-  margin-bottom:0px;
+.star_score {
+  margin-bottom: 0px;
 }
-.line1{
-  margin-bottom:20px;
+.line1 {
+  margin-bottom: 20px;
   width: 359.5px;
   height: 0;
-  border: solid 1px #d9d9d9;
+  border-bottom: solid 0.5px #d9d9d9;
 }
-.card-img-top{
+.card-img-top {
   width: 165px;
   height: 89px;
   background-color: #55595c;
   position: relative;
-  z-index:10;
+  z-index: 10;
 }
 
-.card-body{
+.card-body {
   width: 165px;
   height: 110px;
   display: inline-block;
   border: solid 1px #dddddd;
   background-color: #ffffff;
-  margin-bottom:20px;
-  margin-top:-40px;
+  margin-bottom: 20px;
+  margin-top: -40px;
   position: relative;
   border-radius: 3%;
 }
 
-
-
-.card-title{
+.card-title {
   width: 106px;
   height: 21px;
   font-family: HelveticaNeue;
@@ -64,22 +62,22 @@ body{
   letter-spacing: normal;
   text-align: center;
   color: #373a3c;
-  margin-bottom:0px;
+  margin-bottom: 0px;
   position: absolute;
-  top:42px;
-  left:30px;
+  top: 42px;
+  left: 30px;
 }
 
-.star{
+.star {
   width: 9.4px;
   height: 8.9px;
   color: #5cb85c;
   position: absolute;
-  top:63.2px;
-  left:68.1px;
+  top: 63.2px;
+  left: 68.1px;
 }
 
-.score{
+.score {
   width: 19px;
   height: 12px;
   font-family: HelveticaNeue;
@@ -92,20 +90,20 @@ body{
   text-align: left;
   color: #777777;
   position: absolute;
-  top:61px;
-  left:78px;
+  top: 61px;
+  left: 78px;
 }
 
-.clock{
+.clock {
   width: 11.2px;
   height: 14.9px;
   color: #4b92d9;
   position: absolute;
-  top:83.2px;
-  left:42.3px;
+  top: 83.2px;
+  left: 42.3px;
 }
 
-.now{
+.now {
   width: 66px;
   height: 15px;
   font-family: HelveticaNeue;
@@ -118,107 +116,48 @@ body{
   text-align: left;
   color: #4b92d9;
   position: absolute;
-  top:84px;
-  left:58px;
+  top: 84px;
+  left: 58px;
 }
 
-.col{
-  padding:0px;
+.col {
+  padding: 0px;
 }
 
-#bottom_menu{
-  position:fixed;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
   width: 360px;
-  height: 50px;
-  bottom:0px;
-  z-index:11;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: #dddddd 0.5px solid;
+  padding-top: 9px;
+  padding-bottom: 7px;
   background-color: white;
+  z-index: 11;
 }
-
-#home{
-  width: 14.2px;
-  height: 15.3px;
-  color: #c3c3c3;
+.home-nav,
+.res-nav,
+.bar-nav,
+.random-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-#hometxt{
-  width: 31px;
-  height: 15px;
-  font-family: HelveticaNeue;
+.home-nav-text,
+.res-nav-text,
+.bar-nav-text,
+.random-nav-text {
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #343434;
 }
 
-#person{
-  width: 16px;
-  height: 16px;
-  color: #5cb85c;
-}
-
-#persontxt{
-  width: 21px;
-  height: 15px;
-  font-family: HelveticaNeue;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.75;
-  letter-spacing: normal;
-  text-align: left;
-  color: #343434;
-}
-
-#people{
-  width: 21.4px;
-  height: 16px;
-  color: #c3c3c3;
-}
-
-#peopletxt{
-  width: 31px;
-  height: 15px;
-  margin-bottom:7px;
-  font-family: HelveticaNeue;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.75;
-  letter-spacing: normal;
-  text-align: left;
-  color: #343434;
-}
-
-#random{
-  width: 30px;
-  height: 17px;
-  color: #c3c3c3;
-}
-
-#randomtxt{
-  width: 42px;
-  height: 22px;
-  font-family: HelveticaNeue;
-  font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #343434;
-  margin-top:-30px;
-}
-
-.icon{
-  margin-bottom:0px;
-}
-#content{
-  margin-bottom:50px;
+#content {
+  margin-bottom: 50px;
 }
