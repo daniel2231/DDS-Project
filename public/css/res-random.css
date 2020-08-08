@@ -145,6 +145,10 @@ body {
   font-size: 12px;
 }
 
+.random-nav-text {
+  color: #5cb85c;
+}
+
 #img{
   width: 249px;
   height: 134px;
