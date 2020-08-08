@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+
+    <!--부트스트랩 CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <style>
+        #containall{
+            position: relative;
+            width : 360px;
+            margin-left: auto;
+            margin-right: auto;
+            border : solid rgba(0, 0, 0, 0.125) 0.5px;
+            box-sizing: content-box;
+        }
+
+        .headcontain{
+            position: relative;
+            height : 50px;
+            width : 360px;
+            border-bottom: solid 0.5px rgba(0, 0, 0, 0.125);
+            z-index: 999999999;
+
+        }
+        .headtitle{
+            position: absolute;
+            top : 15px;
+            left : 19px;
+            width : 85px;
+            font-size: 16px;
+            color : #343434;
+        }
+        #cardcontain{
+            padding: 20px 0px 50px 0px;
+        }
+        .card{
+            position : relative;
+            display: inline-block;
+            width : 165px;
+            height : 164px;
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.125) inset;
+            border : none;
+            margin-bottom : 14px;
+        }
+        .card:nth-child(odd){
+            margin-left : 9px;
+            margin-right : 6px;
+        }
+        .card:nth-child(even){
+            margin-right: 9px;
+        }
+        .card-img-top{
+            position: absolute;
+            width : 165px;
+            height: 89px;
+            margin : 0px;
+            padding : 0px;
+        }
+        .card-body{
+            position: absolute;
+            width : 165px;
+            height : 14px;
+            top : 89px;
+            padding : 0px;
+            margin: 0px;
+        }
+        .card-text>a{
+            position: absolute;
+            top : 7px;
+            width : 165px;
+            height : 19px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            color : #373a3c;
+        }
+        .card-point{
+            position: absolute;
+            top : 26px;
+            width : 160px;
+            height : 12px;
+            margin-left : auto;
+            margin-right : auto;
+            font-size: 10px;
+            text-align: center;
+            color : #777777;
+        }
+        .bi-star-fill{
+            margin-top : -2px;
+        }
+        .card-link>a{
+            position: absolute;
+            top : 47px;
+            width : 160px;
+            height: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size : 12px;
+            text-align: center;
+            color : #4b92d9;
+        }
+        .bi-watch{
+            margin-top: -3px;
+            margin-right : 2px;
+        }
+        #footcontain{
+            position :fixed;
+            width: 359px;
+            height : 50px;
+            bottom : 0px;
+            z-index: 999999999;
+            background-color: white;
+        }
+        .footlist{
+            display: inline-block;
+            position : relative;
+            width : 60px;
+            height : 35px;
+            margin : 7px auto auto 7px;
+        }
+        .footicon{
+            position: absolute;
+            width : 60px;
+            color : #c3c3c3;
+        }
+        .foottext{
+            position: absolute;
+            font-size: 12px;
+            bottom : 1px;
+            width : 60px;
+            text-align: center;
+            color : #343434;
+            font-family: HelveticaNeue;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <!--부트스트랩 JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    
+    <div id="containall">
+
+        <!--headlist-->
+        <div class="headcontain">
+            <p class="headtitle">전체 리스트</p>
+        </div>
+
+
+        
+        <!--card-->
+        <div id="cardcontain" class="container">
+
+            <div class="card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMWFhUXGB0aGRgYGBsaHRkbGBsZHRsbHhodHSggHRomHhgYITEhJSkrLi4uGh8zODMtNygtLisBCgoKDg0OGxAQGi8lICYtLS01LS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgMEAAIHAQj/xABGEAABAgQEAwUFBgUCBQIHAAABAhEAAwQhBRIxQVFhcQYTIoGRMkKhsfAUUnLB0eEHIzNi8YKSQ1OissJj0hUWJCVEVHP/xAAZAQADAQEBAAAAAAAAAAAAAAACAwQBAAX/xAAoEQACAgICAQQCAg
+                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" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">꺽정이네 돈장작구이</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://search.pstatic.net/common/?autoRotate=true&type=w560_sharpen&src=http%3A%2F%2Fldb.phinf.naver.net%2F20190828_79%2F15670031782749LKXS_JPEG%2FoETd0NDJlH77ikzmPwjnG1Gr.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text" ><a href="">마 돌</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpx3eocTT8QkfacOWejg97cFFRni7RqRNPLQ&usqp=CAUg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">서피동파</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/proxy/v3P_KOEjvESUidDV5EoKx9YYsOvVV3ZWz2BjAxBDRZKVoQRGFQBcntZ3lb6484F-PDvBmcoFW0Heq06Tl3F-prEzVh-IhvExMVCX97cKp50kKLjY799fzuYjT8lqR6IL3UhiOtT6rdJKJQ-ryooz1azyHuVGpMeV9jb-ln9yp08eg8AyPXnGKyWG-VAUYTBzH46jgNWBHKl-mH-C7qAr91kJgrXo2BT4EyUCZufftxhrkbGcNcwLgTdmPQDPJiaxfHqG-6LDlkfaXXPUFN0v6Kdd3TUiQU-novHtUZJda_eowtnR-nBWFhl8-TuWB9lhaBp6Zw" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">Fruits</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/proxy/9OKKIYBw1bPKkVMSKCvO_zsXKClEnM3YFr-lA7Ps8MrEPhIl5PIdVvoYSwiuj_xaHInvziaZlwS939e8jf1u6-zVRw9_T1dYiqLmi5y3aJaE9hecqg6GnJJ7Uc1mqYkRed_J_vyGHbeo9aBQEUzv0NcD2ejjt5LolOh6xp7Hn5pB" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">오디션 포차</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="http://blogfiles.naver.net/MjAxOTA5MDFfMjI0/MDAxNTY3MzQ0NzEyOTEx.Khvu5Y4aMoN9EIvyKgIfraol3bk6egHS3fnYYFNAT6Mg.HJO_fmSs2-wgXEhzw2uIEDcbtyt1biGTWCbXx0txwjog.JPEG.3771_panda/P20190829_200737162_88C85A6C-0444-49B3-8402-9643847345BA.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">바코드</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://mp-seoul-image-production-s3.mangoplate.com/added_restaurants/(null)_1441031012044.jpg?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">명륜포차</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://img.siksinhot.com/place/1380107353673561.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">포차야</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://mp-seoul-image-production-s3.mangoplate.com/96894/prgzn2rvhoq3mq.jpg?fit=around|359:240&crop=359:240;*,*&output-format=jpg&output-quality=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">싸코스</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2129944E5111441C1C" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">주항아리</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://s3-ap-northeast-1.amazonaws.com/dcreviewsresized/20181122052510081_photo0_48e521448935.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">명쭈3</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9996A33F5ACB71C82F" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">우리한우곱창</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="http://ldb.phinf.naver.net/20200702_186/1593700299252oqJIo_JPEG/gSNiQrZaXAZMaO6ixDGTyNRF.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">도리안그레이</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGBYXGBgXGBgVGhgaGBgXFxoYGBgYHSggGR0lGxcVITEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGxAQGy8lHyUtLS0vLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAECBwj/xABHEAABAwIEAwUFBAcGBQQDAAABAAIRAyEEEjFBBVFhBiJxgZETMqGx8EJywdEHFDNSYrLhIzRTc4LxFUOiwsOSk6OzRHSD/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDBAUABv/EACsRAAICAgIBAwQCAgMBAAAAAAABAhEDIRIxQQQyURMiYXEUM0KBNEPwI//aAAwDAQACEQMRAD8A86ptLm+H+6Fqaz9Wsuhi3U/di/MSoW1MwJOs/NZ0mar2EE6LVOtluhC6Cpa2hQaCpaZw90iRzK6p1SXQeUfBRYcy09EQxggGLyJKbpiX9oNVC3TJkRfou6gv5qMaovo8n2E0hYhRBqmoXlbqNANpi2qCe2HwiA6+SiaLlTuuVr2d14BGdVEDfzUhFyoxVMxG6ZCSOnUcxWxQeNPgu4M2RNGqeS8m0j3FNnWGxVQa6dQjKRc/Ro+SKZg3Boc8ZZuGmziP3sv2QdiYnaVp+KEZW7JWFRQNVLKVzd31tsllSo+pmJOVrbxzWcQrQb7qbhmCqVWk2p0pvUfZttm7vPRvnCZXWjzasXvMZUywXCC0h9YlpBBFMDvk6jNIhg8ZPTdFnF0cPPsgS/8AxHftP9I0pj49SlL8c9x1i408dzuitIHkstPB1K72td3cxhtNnzJvFhMnMegXp3COz1PDUxla0ujvOi58CZsqDwDiHs3CpF4ieVxJHkPirAO1TnuFNm530HMnmsk8lqjp4cK7RS+2HDnNxVZ8d1zi4eYBPxlC8DaGuDtxorz2rq0jTysOdwAbO88/FU52DNMhp1gH1CClaoLjTsvHBseag6hOH4i2t1SeD4sM31Tk44HdDoWTQ4/XDzCxJP18cwsQEs81xTNQhsBUnMOiNqXDT0+VkDh3Q+Oq2xXaMLfTNYpuh5FFzIHgosQ2xC3RMtCV+0de4iwjYzBSmpEBcUTFSF1WGnimr7heom8U65Pmow6RKlrCfMKOkyyNaA+wyi3uSFC6pdE4A2IQ1Zt0vkPg3TErYZdZht1b+wXZcYyq5z5FGnGaLFxNwwHa1yeUc7JJ0Mir4XBlxgAk8hc+gUg4O4GSN95HzX0FhcNToNDKNJrG8mgN8ydSepXGOxrWgzB8b+SzT9SoFY4nI8RwvCXVDlYzMd+g5k6AJpSwFLC396rrmOjT/A0i5/iPkNCvQDxCjUcKQYBJAOQBvxaoOL9jKNZzMp9ns7Lcu0iJNjrdHF6hTWgZcLg9nlOPr1Hk8vG58SVFhcK8mA2frfYeaumO7G0sPWJr1iKQgtaPfcInvHRvKbk8gq3xXiocCyk0U6c2a35ucbuMbkrVetkPOhZicPRYczyKjht9gH5vPw6HVB4ri76h1MAR4Dk0CzR0CD4iO95KHDbqi9on+RmaynwTZc0dZ9EMQmHC2S/wHzSydIeO2WjDshgKacLwzXElwPlb4pZin5KTjOjfwUfCuIl1MX6O8VginKLZ0ozSfEunBOHNe7NADG+6PxM3J6lKu2WEyvDxpEHyReA7QU6bAJCUcf4wKuiMUGbsQvqQtDGu5rmq3dDlWqzOwn9dctofIsT8IiWBsqZm+c+qAxRyvB8PgjcMZtHRDY5sgK69xlW4fonqX8wosGbEclqi/uhc4U98jn9fika00UvaZ04w8Hmiqre6ULiRoeRU9d1vEL19Hq7R2zQfX1qumU7KDCulo8UcymYvuvA+AfDaldVmSiBRXZZ3fVesNaB+HYdz3hjRLnEADmTYL3HslwsYTDtokguJzPI3c6JjoBA8l5b2Log42gSQIdO97Gwhes4rEQfMKOZ0GPwT8T4m1lzHh9aKl8U4rmMNMz9X3W+2GOAcJnQmypn6+57gQLA84Hmd/ALnvDLJK30jdCcYR/J6H2c4VUA9sWzOnT8k2x2NNLKXG7nAQqdR7X4imwgBkAbg/gQhqfE6lZzalQyZAjQC+gGyooqK+0lJym7kE/pOq5hRPV4P/TE/FUBw08ldf0gVP7Kl94/yqgOrXA3W7G7gZX7gXiDu8VCxth1XeJbLipGt0V70idbZBHzTngVKXeJHwStoun/Z6nYHxKjndQZXCrkHcTfDb3kxCW4OmGl2W03jbyXPaiv3mNGwJ9bIPhuJJflPI+Klhg/plpTX1Bk8nmow5bqlDFyI7YVUeh1zK2ERWESVpSZFtNoTYjpGCu8Q3VQByIc8WPRXl4Zmj5RDQEAhdU6JLswabankF3afrdG8KElzeYKSbrY0FaBnUc1gYlY5tgDtIUptdRiXAnedkisq6sKpYcT3RAgFFOZIAGy3gMMQLop1RrdB6pqJuQAKDtYUtKla5hSOrF2gJ+C49kdzHgiLYx4LVZTrU3ybOB6C8T6Er0niVwHDpK8qo0RPM9SvSuC4qWCm65AjxWfOkUgVntQ/M5o6FJsLhpItA2Tzj1EisQdIEdQoqDILeUhZba0alVEJw+UmRIGvULrDuabsblE6TmvveApeMPeyoMjnNkT3SR8lvCvc8AucXGRcmT6lUcagS5XI67YUqb2021HlupBAnYa8lTn8DbM06zHePdPxhWrtRUGZoLQ4Zd53OxF9lWqjGbBzfAyPjf4rVj9pnn2J8Zw2o11226XULpGtintOg4Xa71stYl2azwPGB/sVWxRHS+KtPCqcN9EuHC22c0zGsbeI1HyTTBVBETfl9arP6i2tGjA1eySrwBtY5nuInSAJHmVTa1VrK5LJLGuIE3JAtPncq84vA1HiGYl7LRENj5A/FefY6iWVHMNy1xB6wYnzR9I7tN3+Aeo000iw1TNxoh3JbhccW906bdOiIfip0VHjaZ76qaJzUAUZxF0K90rGC69wF+oxn7VYhvarFPiNzAao1UtEy3wKjmQCt4d9yFrXVGfzZLV0B8kfgDDgeZ+a64Vwt1V7AbNcdeg1TZuDz98BjGC4BLQANBAJlx8rlSe0OnTFzsKXOIHMo7CcMawS7038TyHRTUqwFhc3vb1/qpabS7XT5odHm7I8pOn9PJQPwV5JlOG0IXVHBue4NaJJQs9QryRYLltNxOk9FbaPZCpq8gDpcqwcL4UyiLMBPM3Pqlc0gqNnn2E4e+RLXa8irhTwxa32gT52ALjmhRUqQ7rDs4j0JUMr5IeOhBx1vtKWce8y/luPx8kjw9cuInYgg205WHVWzi2HDHFrdCPnIVcbhcpPLZZZN2aYVxGmK4V7Yg5gCABp4oWng/ZuDNYPzun2FNvIfilrnTWJ6/IKzlcUiKWxNx/BPe4OaJAHMfJV1+GcDdpHkvQS0uLgIgaj0vC0zDsuC0fJVjk4rYjjbPOqrVGwlX3EcDY+crADcaBJq/Zeq0Wg9NPQ/gqRyJiuNFdFAO93ukX6W87LmsSLOM8jz9EViWvpy0gtO4KAqkEQdFRMShhhOKuEB3eHxHnv5pB2mY01i9hkOAJG4IsbeQRWEOSowuuwOaTPKd+iacXx3tyWVGBrASWNaAMs8nR58l6EIxnyQZTco0ykld0ypuJYF1M7lp0MfA9UEHLT2RuhvQY0i5UNeu1ul0BnKmo4Nzr287IKGwuRv9c/hCxSfqbP3j8FtPwYtnGGuCPNaqNLSCsYctTp+BUuKbbwUr+4otxHfZ4Q975jLTcb72sPMiF0+m53uk8rm3lZCcCbma90wGsdN4mxgJnhWmw9fHf8lJ6Y/ZLhcPAiZn3jzjTyCfcJwzS8B2n9LfGEBQoz5K2dm+FiPaPsPsjmeaVs8Q1uHZnDKAOac4DBso3sXczoP6okholboUWPNzMeSk5XoaiZsu6optFosTfYfmuP7Ocoe0HlInzWrCbu5y0/NR6Y4cG28OaT4tkEnqHfGfzTJxgSZt1kpJW4kKlTKOR+vmjkf2norZviYl7D0I+R/BK8fRFuc/hKcVGZmA7t/CQknHXEMDhs8fIqEtlYhNY5Wg9Esovl5gzc6JvTh9AO6X8rFLaWEDIJ5gepgI+DwxweHJdAMb+en4BHHABplxB6i2nNZgheIPOYmEeXDePT81S00T2mQOpkaCT0E/JbdTIsQZ3kQiaOHJeIOQARbpsP6rMRRM3sR9SOiXj5DYi4rwOnWEECeeqovG+y9Wme4Mw6bgax+XzXqFQECdllJgJEi3PkqQytOmLKC8Hh+WEIWlhzNu3dv5cl6j2s7KtqA1KYa2pryDx8gV59UwxaSHCCDBB2K1xkiLRqlle2D3mu+vUKv8RwRpOjVpu08x16hPKDchPI/A80RjMK2o1zN/snSHDx2285VU66FasqgdC4c9bqNIJBEESCD01CiVBDrOsXELaNs8F4puhREyPELiq2Wlc4U92OSl2iq7JOFucCWgxNj+KtOBbIJ8lXcHT74OwmTsLHVXfgWEzsA+84nb3oA+BKTICId2d4aariPsi7ug/NWosP2TAAgDYeCZdmuHilQFhmf3j4HQeihxjA2rlFgRPnofwUZvRSPZX8U7EDR0+TfyQFTFVmOBdVJIvlbGUdHENMnoBbmrXXZbT/AH2QZ4ZIvAn6uVDl4ZSgHgXGQapa4BwJJaSIiTYExforBiKpdYacgq3iOFZGu9nzBJ8L2T/hh9oxpJiRf8Y85SyqtBX5F9UF0yYOl0hrVXU6oPL5K94vhzT05EX8uqq/FuHEAfvST5f7rElLHJuXRpTjPoecOeHNkdCo8ZgpkDxCVdnMbleKbt7DxVryDfbkrwaktEpxcXsSYMd1zVz2gwYDmOHukg3PxTUYQB2YHXUf1UeJwecQNeqaqVC3uzGNgjqEYaRLdLhdMw5ytkSYuPK6IZTMcwnSsWyOi+Inl8VoODi4annosfTdMtbMSoZcCYsTbSYRlKmrAkd4hljY8jHOR9eaDoy3qPCUx9oS06ZiNNuRt5qGo4Dx6WQa8hXwRNINiBHhPzVQ7V9n87s7QGm2mhbOniJt6K3FQYinIRxypglE8q47wY0Mk3bUBIn+EgH5j1SijiIOQ+9t/EPzCtnbYuNVpM5Q3K0HaNfmFUOKYUOaDoRuFuhLdEGtBWK4bUqA1GguBu8C9xfMQPA+iXcW4QDTpVaTDLmn2jWiwLXFgcANJykrMFnaZc8g7R9odTNtOqK4liajXMpMJaGsExodded8x80zlQFG2Iv+HVf8J/8A6SsTiK3+J8Fi9/IRT+PL4YswlNzoAEn61TTC8KAu8+Q08zunbsEGjuNAA2Hz6ochYpeqc/bpG+HpIw3LbOarG+zIaPhGhR3Bqzm5S06S0/6jOnogrAXRPZ14z5TvccpaZt4ifQJ8D00R9WvuTPT8FjnNY0HYXlAYrFONYOdZpAaHHSdYPJM67AMpy2gTMwSNUoxOMcxxBaHNOrSLQeSaTXTMt1sdMmIynrZTMpE7HzSXh3ES0jIDk0yuJMfdI26FWGhic/lrdS4rsfkQP4bmHeIH1sN1Jw/hzGQGkxP4z5KOriGl2UluxjXnBd6FNGe7bxsAEaQLI30QN/JBYvh2YzNz5op9GdXeiw0gAJd4KWTFGaprQ8ZuLtFWr8HdnnQgyCOisdLQE2O4WsVzsVy6obGRoo4sSxppFZ5HOmzVRpHgozWiI1RVNuYdPRQOpmdJ10jXZVp+BE0HUnGL+K02vlMR5fko8MbQTddVxJvYp10KF0qsiYPz+ShxLJk9IG0c/wAllIacxf6jVFuadvoqjViiZ1YN90dL3lcNEmSuazHh7vaEkWIPPb8l0x7dm+ZKz38lESZVE6ndHVWAsBCDqGNkUtnmVDtphAaZMXF/TX4SqHiWf2buglep8bpZ6bhz/FeZYof2Lj0+dlqi3SJPyKaLMzmwJN7c4gx80c8kuL3XcdVBhnFlQtA+zDncs2V0DrZvqjSp+olTo1+lh/kyDMORWkRlHNaULNnEbs+SGxGG3HopWuUszcLKm4sq0J6tNC3YQ4GDIv8AEJvjaG4FvklxbYzotmHJ5MmfEpKj088RNfDMxFGCIy1GxJa9sAjnG99iClrOKTZ7G33EgqldnuO1MM5wBOVwAe3YjZwHMX9VeMNgmvAex2Zjrgq2VNO0cpxdjfB8OyjNmBabiLx4wu+J45uHbY5nuAgbDqfBQ0nVGNLBdp+Bi8GFXsc92fva6X2A0U5SpaPSbSJ+H4p+dziTLt53kH81ccDWJZFR13DwIBVAp4kNfeY0MfMJrw6v7R2ZuaP3jA9AChjkkGKdFqr1GUwIc4AaxedNVyzilJ/2gNdfxlL6gMWv8VwKEBpOU5p0iRBiDyRlb6HVjgU8wBpvb4C4P5XQj3vJgsIkxIFlNw2gxp91s6zA+Y0TJ2IGgEnoikmtjJtAOHpFoMldtIOhMqTE4RzmkknwCHGGNo7sC8ySb69LQEUkgq2dPJb1UWPxhpUn1n6MExzOgHmYHmjWMJ966rfbGtnNKgCMslzhsSLAW80UkFoW9luO4lz3PqS6i4+bZOrY2/h5adbiMby+eqq+GqZXBkCLm1h9XVkwFMbxpZNJrlSESdWxnTe14vfogcXhw0WBIn09VKTkMx6Bd1XyPFCUU0eT2CU35SBsb+HJSPY4ocu707NHx5LXtiFGKodkWMBY12YDTkvKOKw0MYNc0nwZy849F6P2yxjm0A8AHUX0mBBPQCT5LyfFYpz6uY942k290c4tJvPiVriklfwSpt0GU6G53WOpKanWDtNeW66LVzpTbezrxjSpAvsSsROQLaXkxqCazNwuWGF3RIIsdfmuCImdNSTaBzJ2ClFN6Kt0rJm/ApbxHClt23afgg8T2ka05aYzfxGw8tz8FZ8NhG4/Al+DJZiqIJq0ZD/at/fp5h/0/wBFrxelyp2Ysvq8S/P6KXiWH3tCE37Ldo34d1hnYbupk/8AUzkfo80jpVKhcWm5HS/jYbImtwstcL2MkEWgiJGtokHXQg3XQjH7eMjnTkpSuJ7PwvH0cS32lF2YaGbFp5Obsqp2ipkYmpO4afHugT8FQsJxGrh3h7HOa4fabv0cNHDorngu1eHxQaMU3I8WFVlmn7wglvgZHgoZcLrQHsm4NhBWqZDqfqdp8JVxZwf2LAAZ5+KM4Hw+jSph1KH5gDnEHMDeztI80TWeb7/XzSqNIKVC6nUA2vflHL81hLTF58dj0upKOGc42ga7Lb+F1b3A5Rr4qKlN+CtI6pu667fC6mqVxTEyAd3HQBQYTB1Gm99v6n63WcTwYc3IY1EySJ/NM7S12NBRclfRBhePl7wwtGV5MX7wHUc05pmRBVaZh30mmr7PO8EEBs66SXXJA5BO+H1HOY0vbDjcgbX89oS+n50+bKeoePl/8zeNzuhlORPvOA91v5nRVjjrAMZSYPdbTj+Y/krjVMQBqbdBuT9dF59XxJfxSq2bNZHT7A/NV47bIqXgbOw8kHcJjSftug61EmCCRBBtvzB6f0UjCQRKnPTseO1Q7dUAgZr2XNRxAvPiuBRD7ukG1wYkdUWWA/JXI9Cx5CixNVrRMgQJJOgHO+iH49xalhpNR4HIauPQBeYdou1FXEmGy2nNmjf7xGvhsgoNhsN7XdoziHNpM/ZtMj+M27zuQEJMynH49VLhcFlGY3cdenQLohTyZL1Ho24MPFW+yIt5KWliyLOHmuC3kuHBSdPs0VQd7dv7wWIH2axD6a+QWzp+PbR96csTYekTv9FTcO40zFZqFcBjakZHD7DhpnP2gd/hCH7c4ABzKlG9AtyMd1ae/m6k38CPKrUnwV1sGCMPurZxs/qZZNeAzi3D3UKjmOFwfI9QdwpuAcaq4Wq2rSeWvaZB/AjcJ7gC3HUhReQMQwH2Tv8AEaP+WTzG3oocF2NqACpiJptJgN0cbE3N8gt1J5DVWnFLZLEnJ8Utll7SYOnxGj/xHBwyvTE4igNREf2rG7tM3HXxVLxXGnFsG1QOBEe64XkOHO9j19W3FKbqNOKE0mEEW961iHGZKpzxcnffdTSGlFwZZMEWV72HMHUIDF4YscYKXYesWuDmmCnFPFNqiTZ24XnDye52S8G7TV8Me49zJ1y3afvMNj4q+8E/SO1/drUwebqR+LqTjIHWSvNcThoPRCuoJHBMKke/YLtThan7Os2SR3XSw63gOg+iftrDKHTY6flZfNlCrUGhkcnAOHxuPJNuG8bxFL3XPbH7lRwaP9DpCi8LXRRTR9AsIN1sheRcN7b4pv2w7/MpAjrJpEE+MJpT7e1SZcKJ8HPpD/5Gx8Uv05HuSL/VpFzhe3Ia+BKirVMr9RoQJ30/Ieqp9P8ASKwQDTZOtsRTP4WPRc4v9IFB3/JEi0+1pn8Y80rxyrSDyRcW40Cx1P15KkYWkTj8W8Cwy/HLP4IWv2/pfuD/AN1n4JdX7fMDy9lOm1zmhplz6kxuQ0ATbmmUJeT3JF9Ybc1w9268yxHburEMdl+4wD4vJKT4rj1Wse8SfvOLh6aIfQbG+pR647tfh6Ni8PjZneI9LBVrjH6R6r5ZQaKY0ze+89R9lvxKouUnf8lM3KwSSqLGl+RW72T4iSTUrOc97v3jJ8yfwQlGv355R5W25IXE4zNLj7u3WPwQWFqEuJ5ozVpjYnxaLex03UdYSeqDwtQgdEabjque48WdROyIgjWPrktKcXF/AqJ9OOo+KATnyWLJ8fT+q0mPckOeG16b5pVj/YVQB9x49145ESQdzKpnG+GOpYh1LL3g7KA0TJmBlA1my3ieLVKMBsZjeSA6I0gG0zz5L0L9GbqeOFWtVAbiKYFMvb3STVBDarRo2pZ4JHTmV3s0o8rifOYouqkDdmuyv6swVagzYiM2T3vZN/hgEGppfa8aSnpc1oh0HNraYmxdB087nxkKXGYZ1Nxc/K2o1pzvAOV1zlflBGYmBDdr3tbkYXORXFPM0k5mTGky5kTmBA0HOxhZm3N6OvCOPFj+7r5/P/uhHxXClzXMMB0EtuA1wAkmT7wg2n4EFee8Qw4Y7Qx9evivWjRIbALsozQ0y6Ab5XWEyI7ulhreKh2qwTRG7nAwNXOAIEgn3hMCetpurxjxRzs2X6j6opjWToPrmpaIk294fH6+ukD6bmOvaNvgjmUxUALbOCfjyWiN0TYfHSMjgCOR2PjqPAohuHDicvkCh/1Q1Qcois3Vv74H4/7col4Hi6MllcOaDZr2mCx3JwOrfiFnaKIKp8Ndy9EzwnDTyn1+pS19Q0n++DyI0ITfhnH+ZHiLpRkWnh/AminmfkBAM3EiNZGvJJeM0mFji1vdGlvetqJ28VnFu0mcAHvW1dtppGs+euyS4jihcMu3IAD4ABeVnhDj6F0vcxWB+ELhMANtckDXxQDsAZ28jKbkNQtyLeVGVMLCiLAFNsdIgDV3T1W23mNBqdgoS8oqLFckH06i1WjVxsFHhxIJNgNT9alB4vEZzAs0aBCthT0c1q2Y9NgjuFU5KX06clWHhmHhSzSSjRf08HKVjihSELh9AjT0UjTaF2Dz9VzG3Z1KBc0GfVdhynfSB/NCVGFuunNMqYOif2vRYh845rEeIbEXHcPmpNqDVhId910ZT5ODgfvNTnsLQijVMlpeW5XAxBbp6y70CW4HEEEtdqNZ3CMfiCyYMMdEgWiNx1Xe9Fkgp1kPnvWYpONwPWuDYhmPpMe/9tQLg6NDmlsmRcOaLjT4LvH0MpzGQIIk3DR/C39484gAEnReW9he0mIo4l78xLDqwzl1BgDbugyfAr2XEMbiaLa1LQ94A2hwGjjB0O/gUrXCV1pnnJzik30JXMmAWWE5RPSAXSLkxediZ1g84mhMZxG7S7UFwg3y2B30+QU1Fhpw5wlx0abAfxEXMzo2dTzJK7zZrm835mfI9NeR2F1SydHn3ajsy4DMxpedDOoO1t9r+CpLA6k69jy/P4L23idRjKZzkADKAdoJ7rTtEkQbAAnRtzReL9nX1cz3DK29t53LjYRfwEbWk3vR7wCYWtSq0/ah2Wqwd2PtEc9tJtv5pZxOm2vNSmA2qB/aMH2x+83r0121jMPi8I+g6IgHcaHqDuh6xIOcWI3Upt8+Q0a40CjE2iZbt06KIvBMyQf3hr581PiXCpLwId9tvP8AiH1/UIs5GyP5R4NGLrNtmzD1+Butt4m7cD0I/FCNqmI1HI3Cmod5wbe5AsfzT/a+0DYczixymGAeZutUeLvAkNafHMY+IWsThAxhuCSDbcQTrbcQl7ajmgQY1+amlCxrkH1MTWqXygDnAaP/AFOMfFDuY0e+/Of3WyG+bt/IeaGfUJuSSepn5rlFqK6QLfkmq1yeQA0AsB9c1JhKWc8gLk8gocPRLjA8zsBzXeLxIAyM90b/ALx5lTk/geK8szG4nN3W2aNBz6nqh2haap6NOTCR6KpWHcLw0mVZ6eFgfXwS/hWGiLJ5TC5mfI3I6uDHxiA5oXYKJdh8xAAkzAgSfCN1aOFdhCQHYh5ZP/LZBd5uIgeABSwg8ntHyZY4/cyoh66JHivSaXZPBt/5Rd1c95+RARY4LhR/+PT82z8Sq/w5fJnfrYeEzyb2TeR+Kxep/qGB/wAOh6t/NYj/ABH8nv5sfg8V4vhSDnZqL/0W8FUbUGR2jgQP4XQYPk6DG8dUfUYPEFJcTTNN8/ZPwOxTYJ+PKBmx9vwzeJqPwrC3R5tIjU3JnyHoFev0XdtH02NoYgufTc43cS5zGk2IJ170+R8FVq2C/WqYIANWmZMmMzIIMcz7vp1QDKzxlosJY6Zc4WIiwgi45eXVdP6kZw5SfSOasMvqKEF2z3vj3DspLh0mJhwteN7DzFkifisrQXTJsBIOYwLTF7xeIIIJEZQ6bsR2v/XG/q1a9Wm0BtSAM5aACCBpMT4krdLg7GYl1c95wn2bSABTm7ojWXDNfQk9IEG3oScaZHg8IXRVrECoJiJytaXFwsCTPQakHfvDiqypUefZtbka3vOkmO8DEZcrqgAP8LZ9XeGcKntBUphtMOvJuSGi8AQRcQZU9Ss1zSAGimG3a4hgYA4y4kAwQRPja5kh+hezzzi/CmubEZW3uXZrm5eSbnXUx0gQ5U7/AIeHXpAvaQC4iIaSBa5v9RK9TxeBFT+0Ly2k4ZgDAzNdJayXWDbZpJgZm7kZU/EcO0ANY3NIytpt0A3zdLE37xibCUyafYrXweXY7hb2GRtf02S6Z/FekswkSHlrhc2EBt7CZ0Gmluek03tDwg0Xh7b033af+0/V0rS7Q1NOpdiaEXw8d8Lg0hGYabjcf0RmDoEOaYkGDI3BtI5/mI1SDB2Hw3tHZbQSATOxMT4XWu1/Bm4Z4Y17XtgODmmRcuETzt8U34dhPZZqjgJgCmDcG4Oa2wgRznok3Hcz4gDaY2ja/j8lO/u0NX22IIUlKkXGBqiaWAeTEdfLmpMURSblFydTz6DonlKtAhG9kGJqhoyMP3jz/oggFtom6lZTJSdFKbOGt5JzwrCTff4FRYPBbp1h6UBZc2Twjbgw+WH4ZmWxCJaoKFcOEO9VJkcC0C+dzWt+85wa2fMhc5puVeTfaSsuvYnBN71Zw7wgMtoDILutwR5HmrTmSvCkMrPogQ1jKTWkx3sodmIg7EierkwLwAXHQAk+AuuvjioRo42STySslhZlSevx0MLHETSe2WugiDJBaTztomWC4hSq+64Tym/lzSrNBvjezzxTSutG/YN/dHoFiLyrFQU8Qdp5pbxv3PX5raxc7D70dXP7GZwP9pT/ANPzCEd/eqvn8wsWLWvbIjh/5EC7/os96n/nO/lC9B4l+1f94/MrFi6Uvcv0jjrr/bNUv+7/ALCl+M0qf5eH/wDKsWJGFB/Hv7of/wBZvyaqxwj+8VvGp/NTWLEoUI3/AN0P3nfypJx/+7f/ANvwcsWIr+ot6z/ky/ZVRr6fNOeDfs6f+ZV/8axYlIlux/7EffqfzKuYnb63K2sWeHuKz6OmaP8Auj+dqqvFPfH3VixVl7/9Bj/W/wBkDEXhVtYkmUx9j7C7Ilui2sXPn2dSHRqj9eqa8P8A2+G/z8P/ADNWliX/ALF+0eyf1y/R6Gz+8P8AB38zUyf7jvuu+SxYt/8Aizkx7Qoq/wBxP3z/APcVUMP+2/1fitrFyfUf2R/SOtg/rl+2ekrFixdU5h//2Q==" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">남자주방</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://mblogthumb-phinf.pstatic.net/MjAxODA3MTJfOTQg/MDAxNTMxMzIyMDgzMDky.HZMbPivyMzUySJ39XPSUcgHoKGvoBx3cS3xRSRnq9l0g.9-26f06tCnxoHIbK6ijKspSW5Q2FQh29wkUzzCTox9Eg.JPEG.hjylol/output_3155884768.jpg?type=w800" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">잼잼파스탕</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/proxy/S5byOaxowYB4JdEAukctubsIXfTgHfXKVMHcj-89Kc6k91WEQ4waPQnH9LBBOGUWPs6gNXyKszn-aFsT0N0YJRkyx63S9ZOiPUDiS9X0WPnUq0nzfFZx2Ppfq2qVKiMLqbaAWCNXBDiSYN36D5qtEwt94su-ZEXi6HlC_hYDeLHpgtk8rsRZbhFJKVnmZudJqYhzI7HA0BNfJfW1lHWCMO-oY1K78gSENZWSpDdiqhPrE-qk9iPriikbWGnVUZ90fckNW2lRdu0TnMQ7aJ9bOerRAdH3ajuugudv3IRov5vrEirjz-_6LK8QrK3wmIqjZU8Q7BEe" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">장고상회</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/proxy/zujJ6bV0tZSbJeurVkLu-Efnk_tk-4gtObM__k4fleHXXGrg5EcPkk0x1UPgR1c2mPljz_gYIuZt7yJEtCQ9Fqezfh1J-pqyNw6hzbLyDx0zyfgfvzVffWP5nS1rh8uKkibvHncDQiV-4LS3Rq3KyKmwY9UwPwTYf_XOyywLgpyq5Qjn-c-xLrMnYnkUWR1cthsdQ5Ea2SWA5keNONKyqjSOv7cQD1899XN2tiSgY6fi_LI9BRFTrAjeYzIrBqDSuEh4M7Jx8va2dD6kBR8EK35wowYTg8xqSsB2yzE-PWtweT7roNmzdmwwSm8jiLb34V6tWWP6cx39_WN9NqlHPWD3aIoFmV6EN0rJzQDGRkkYi3glNUio" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">코다차야</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://s3-ap-northeast-1.amazonaws.com/dcreviewsresized/20190316174730_photo0_BC59JQglDifg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">혜화동 사람들</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://lh3.googleusercontent.com/proxy/c78iYdeYbSdeVWv0i-RZOiOTmN3-K8jcpEvdsGbDT9WWYeZizT_djUJP2LG6d_QGNP_6YblZW9yZz7WZ7lbczdBbh7-JeEjNhKbzC_0GPLUdfozRPzMkRHlRvduX4e2mcKMn7_eTQ14vTVSuD3WVhj2KFI6tgUAhEa1_8OkNCNm0SZ03SQlbB5HcyX_0ykexxGZ82uRNhiFqQgPinaRk1dY4OCqvKvT5eKN74PowFEbiuhavBty8lfCv9CthTpj0MqSMy6xAvLOJ8IOynZCO7koI4x5drlWps1ZqSJmfPA" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">한신포차</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-4_OD4DmRe9x9gHXXLqm2-9jH6tdy9Nr_Hw&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                <p class="card-text"><a href="">술부심</a></p>
+                <div class="card-point"><svg width="9.4px" height="8.9px" viewBox="0 0 16 16" class="bi bi-star-fill" fill="#5cb85c" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>4.49</div>
+                <div class="card-link"><a href=""><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-watch" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86A5.985 5.985 0 0 1 14 8a5.985 5.985 0 0 1-2 4.472v1.861c0 .92-.746 1.667-1.667 1.667H5.667C4.747 16 4 15.254 4 14.333zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
+                    <path d="M13.918 8.993A.502.502 0 0 0 14.5 8.5v-1a.5.5 0 0 0-.582-.493 6.044 6.044 0 0 1 0 1.986z"/>
+                    <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                </svg>바로 예약하기</a></div>
+                </div>
+            </div>
+
+         
+
+        </div>
+
+
+        <!--footlist-->
+        <div id="footcontain">
+            <span class="footlist" style="margin-left: 41px;">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door-fill footicon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+                    <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                </svg>
+                <div class="foottext">홈화면</div>          
+            </span>
+
+            <span class="footlist">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill footicon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+                <div class="foottext">밥약</div>
+            </span>
+
+            <span class="footlist">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-people-fill footicon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                </svg>
+                <div class="foottext">뒤풀이</div>
+            </span>
+
+            <span class="footlist">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-repeat footicon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"/>
+                    <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"/>
+                </svg>
+                <div class="foottext">랜덤추천</div>
+            </span>
+
+        </div>
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
