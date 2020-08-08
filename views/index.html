@@ -16,49 +16,8 @@
      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
      crossorigin="anonymous"
    />
-   <style>
-     .bgbox {
-       background-color : #5cb85c86;
-       position : absolute;
-       top : 37%;
-       left : 10%;
-       height : 63%;
-       width : 90%;
-       z-index: -1;
-      }
-     
-     .ttl_main {
-      text-align: center;
-      padding-top : 40%;
-      padding-bottom: 20%;;
-     }
-
-     .ttl_main p {
-       font-size: 20px;
-       color : #5cb85c;
-       margin-bottom: auto;
-     }
-
-
-     .h1wrapper h1{
-       display: inline-block;
-       font-size: 35px;
-     }
-
-     #h1_01{
-       color:#4b92d9;
-     }
-
-     .btn_idx {
-       background-color: rgba(75, 146, 217, 0.85);
-       border : none;
-       padding : 4%;
-       width : 65%;
-       margin : 0 17.5%;
-       color : white;
-      border-radius: 5px;
-     }
-   </style>
+   <link rel="stylesheet" type="text/css" href="restaurant/custom.css">
+  
   </head>
   <body>
     <div class="container-fluid">
@@ -67,11 +26,9 @@
         <div class = "h1wrapper"><h1 id="h1_01">혜화로드</h1><h1 id="h1_02">로 쉽게!</h1></div>
       </div>
       <div class = btns_main>
-        <a href="#"><button type="button" class="btn_idx">밥약 장소 찾기</button></a>
-        <p></p>
-        <a href="#"><button type="button" class="btn_idx">뒤풀이 장소 찾기</button></a>
-        <p></p>
-        <a href="#"><button type="button" class="btn_idx">랜덤 추천 받기</button></a>
+        <button type="button" class="btn btn-primary btn-lg btn_idx">밥약 장소 찾기</button>
+        <button type="button" class="btn btn-primary btn-lg btn_idx">뒤풀이 장소 찾기</button>
+        <button type="button" class="btn btn-primary btn-lg btn_idx">랜덤 추천 받기</button>
       </div>
       <div class="bgbox"></div>
   </div> <!--container-fluid-->
