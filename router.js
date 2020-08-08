@@ -7,15 +7,19 @@ router.get("/", (req, res) => {
 });
 
 router.get("/restaurant", (req, res) => {
-  res.sendFile(viewPath + "restaurant.html", { root: __dirname });
+  res.sendFile(viewPath + "res-list-june.html", { root: __dirname });
 });
 
 router.get("/random", (req, res) => {
-  res.sendFile(viewPath + "random.html", { root: __dirname });
+  res.sendFile(viewPath + "res-random.html", { root: __dirname });
+});
+
+router.get("/bar-random", (req, res) => {
+  res.sendFile(viewPath + "bar-random.html", { root: __dirname });
 });
 
 router.get("/bar", (req, res) => {
-  res.sendFile(viewPath + "bar.html", { root: __dirname });
+  res.sendFile(viewPath + "barList.html", { root: __dirname });
 });
 
 let rsData = [

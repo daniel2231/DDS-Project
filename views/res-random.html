@@ -12,8 +12,8 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <script src="../public/js/res-random.js"></script>
-    <link rel="stylesheet" href="../public/css/res-random.css" />
+    <script src="/js/res-random.js"></script>
+    <link rel="stylesheet" href="/css/res-random.css" />
   </head>
 
   <body>
@@ -46,12 +46,12 @@
       <div class="main-nav">
         <ul class="nav">
           <li class="nav-item">
-            <a id="res" class="nav-link active" href="res-random.html">
+            <a id="res" class="nav-link active" href="/random">
               <span class="active-ellipse"></span>밥약</a
             >
           </li>
           <li class="nav-item">
-            <a id="bar" class="nav-link" href="#">뒤풀이</a>
+            <a id="bar" class="nav-link" href="/bar-random">뒤풀이</a>
           </li>
         </ul>
       </div>
@@ -64,6 +64,7 @@
           id="img"
           alt="..."
         />
+
         <div class="card-body">
           <p class="card-text" id="name">
             정돈 대학로 본점
@@ -134,7 +135,9 @@
 
     <section class="footer">
       <div class="bottom-nav">
-        <div onclick="location.href='#'" class="home-nav">
+
+        <div class="home-nav">
+          <a href="/">
           <svg
             width="18px"
             height="20px"
@@ -151,65 +154,75 @@
               d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
             />
           </svg>
+          </a>
           <div class="home-nav-text">
             홈화면
           </div>
         </div>
-        <div onclick="location.href='res-list-june.html'" class="res-nav">
-          <svg
-            width="20px"
-            height="20px"
-            viewBox="0 0 16 16"
-            class="bi bi-person-fill"
-            fill="#c3c3c3"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-            />
-          </svg>
+
+        <div class="res-nav">
+          <a href="restaurant">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              class="bi bi-person-fill"
+              fill="#c3c3c3"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+              />
+            </svg>
+          </a>
           <div class="res-nav-text">
             밥약
           </div>
         </div>
-        <div onclick="location.href='barList.html'" class="bar-nav">
-          <svg
-            width="24px"
-            height="20px"
-            viewBox="0 0 16 16"
-            class="bi bi-people-fill"
-            fill="#c3c3c3"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
-            />
-          </svg>
+
+        <div class="bar-nav">
+          <a href="bar">
+            <svg
+              width="24px"
+              height="20px"
+              viewBox="0 0 16 16"
+              class="bi bi-people-fill"
+              fill="#c3c3c3"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+              />
+            </svg>
+          </a>
+
           <div class="bar-nav-text">
             뒤풀이
           </div>
         </div>
 
-        <div onclick="location.href='res-random.html'" class="random-nav">
-          <svg
-            width="20px"
-            height="20px"
-            viewBox="0 0 16 16"
-            class="bi bi-arrow-repeat"
-            fill="#5cb85c"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"
-            />
-            <path
-              fill-rule="evenodd"
-              d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"
-            />
-          </svg>
+        <div class="random-nav">
+          <a href="random">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 16 16"
+              class="bi bi-arrow-repeat"
+              fill="#5cb85c"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"
+              />
+            </svg>
+          </a>
           <div class="random-nav-text">
             랜덤추천
           </div>
@@ -233,6 +246,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <script src="../public/js/res-random.js"></script>
+    <script src="/js/res-random.js"></script>
   </body>
 </html>

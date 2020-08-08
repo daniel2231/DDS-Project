@@ -155,7 +155,12 @@ header {
   font-size: 12px;
 }
 
-#img {
+
+.random-nav-text {
+  color: #5cb85c;
+}
+
+#img{
   width: 249px;
   height: 134px;
 }
