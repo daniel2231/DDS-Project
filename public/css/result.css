@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  .top {
+    align-items: center;
+    border-bottom: #dddddd 0.5px solid;
+    display: flex;
+    height: 50px;
+  }
+  .top svg {
+    margin-left: 16px;
+  }
+  .maintext {
+    text-align: center;
+    padding-top: 35px;
+    font-size: 20px;
+    text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.16);
+  }
+  .main-nav {
+    padding: 29px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-link {
+    font-size: 20px;
+    color: #343434;
+  }
+  #bar {
+    padding: 0 25px 0 0;
+  }
+  #res {
+    padding: 0 0 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .active-ellipse {
+    background-color: #5cb85c;
+    border: 1px solid #5cb85c;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+  }
+  .rating {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777777;
+  }
+  .rating svg {
+    margin-right: 3.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    width: 249px;
+    height: 247px;
+  }
+  .card-body {
+    padding-top: 14px;
+  }
+  .card-text {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #373a3c;
+  }
+  .reserve-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b92d9;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .reserve-link svg {
+    margin-right: 4.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4b92d9;
+  }
+  .retry {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-secondary {
+    background-color: #4b92d9;
+    border: 1px solid #4b92d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 189px;
+    height: 43px;
+  }
+  .retry svg {
+    margin-right: 4.6px;
+  }
+  .btn-secondary span {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: #dddddd 0.5px solid;
+    padding-top: 9px;
+    padding-bottom: 7px;
+  }
+  .home-nav,
+  .res-nav,
+  .bar-nav,
+  .random-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-nav-text,
+  .res-nav-text,
+  .bar-nav-text,
+  .random-nav-text {
+    font-size: 12px;
+  }
