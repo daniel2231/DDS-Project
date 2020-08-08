@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>밥약 랜덤 추천 받기</title>
+    <title>뒤풀이 랜덤 추천 받기</title>
 
     <!--부트스트랩 CSS-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"/>
-    <script src="../public/js/res-random.js"></script>
-    <link rel="stylesheet" href="../public/css/res-random.css"/>
+      crossorigin="anonymous"
+    />
+    <script src="../public/js/bar-random.js"></script>
+    <link rel="stylesheet" href="../public/css/bar-random.css"/>
   </head>
 
   <body>
@@ -44,25 +45,24 @@
       <div class="main-nav">
         <ul class="nav">
           <li class="nav-item">
-            <a id="res" class="nav-link active" href="res-random.html">
-              <span class="active-ellipse"></span>밥약</a
-            >
+            <a id="bar" class="nav-link" href="bar-random.html">밥약</a>
           </li>
           <li class="nav-item">
-            <a id="bar" class="nav-link" href="bar-random.html">뒤풀이</a>
+            <a id="res" class="nav-link active" href="result.html">
+                <span class="active-ellipse"></span>뒤풀이</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="mainbody">
       <div class="card">
-        <img src="../public/default image.jpg" class="card-img-top" id="img" alt="..." />
+        <img id="imgimg" src="http://blogfiles.naver.net/MjAxOTA5MjRfMjYy/MDAxNTY5MzM1MjAxMTM3.lr0UWf_nPfkIuw9yHiznFAWU6mfRemiJ_GfEqoYu_SIg.wk8VurG52mpDRVvG326woYPYFrY7442A505vmANkXs8g.JPEG.ekwjd373/IMG_2159.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <p class="card-text"id="name">
-            정돈 대학로 본점
+          <p id="name" class="card-text">
+            술부심
           </p>
           <p class="rating">
-            <span 
+            <span
               ><svg
                 width="12px"
                 height="12px"
@@ -103,7 +103,7 @@
       </div>
     </section>
     <section class="retry">
-      <button type="button" class="btn btn-secondary" onclick="toggleImg(0,13)">
+      <button type="button" class="btn btn-secondary" onclick="barToggleImg(0,19)">
         <svg
           width="16px"
           height="16px"
