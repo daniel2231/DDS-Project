@@ -1,0 +1,68 @@
+h2 {
+    font-size : 25px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+table {
+    width :100%;
+    margin-top : 10px;
+    font-size : 12px;
+}
+
+td {
+  padding : 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tab-menu, .tab-info {
+  width : 100%;
+  margin-bottom: 50%;
+}
+
+#price {
+  width : 30%;
+  text-align: right;
+}
+
+#icon {
+  width : 10%;
+  text-align: center;
+}
+
+img{
+width: 100%;
+height: 250px;
+}
+
+#ArrowLeft{
+    height: 50px;
+}
+.class{
+    font-size: small;
+    text-align: center;
+}
+h2{
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 15px;
+}
+#detail{
+    font-size: small;
+}
+
+.callbtn {
+  text-align: center;
+}
+
+.callbtn .btn-primary {
+    background-color:#4b92d9;
+    width : 60%;
+    margin-bottom: 2em;
+    position : fixed;
+    right : 20%;
+    bottom : 0.8%;
+}

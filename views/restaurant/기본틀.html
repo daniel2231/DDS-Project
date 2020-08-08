@@ -16,62 +16,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <style>
-        h2 {
-            font-size : 25px;
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        table {
-            margin-top : 10px;
-            margin-bottom: 10px;
-            font-size : 12px;
-        }
-
-        td {
-          padding : 10px;
-          border-bottom: 1px solid #e0e0e0;
-        }
-
-        .tab-menu, .tab-info {
-          width : 100%;
-        }
-
-        #price {
-          width : 30%;
-          text-align: right;
-        }
-
-        #icon {
-          width : 10%;
-          text-align: center;
-        }
-
-        img{
-        width: 100%;
-        height: 250px;
-        }
-        #ArrowLeft{
-            height: 50px;
-        }
-        .class{
-            font-size: small;
-            text-align: center;
-        }
-        h2{
-            font-weight: bold;
-            font-size: x-large;
-            margin-top: 15px;
-        }
-        #detail{
-            font-size: small;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="custom.css">
   </head>
   <body>
     <div id="ArrowLeft"><svg width="25px" height="25px" viewBox="0 0 16 8" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -188,6 +133,9 @@
         <div id="map" style="width: 100%; height: 400px;"></div>
       </div>
     </div>
+</div>
+<div class="callbtn">
+  <button type="button" class="btn btn-primary btn-lg">바로 예약하기</button>
 </div>
     <script>
       var map = new naver.maps.Map("map", {
