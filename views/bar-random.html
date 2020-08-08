@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>밥약 랜덤 추천 받기</title>
+    <title>뒤풀이 랜덤 추천 받기</title>
 
     <!--부트스트랩 CSS-->
     <link
@@ -12,15 +12,14 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <script src="../public/js/res-random.js"></script>
-    <link rel="stylesheet" href="../public/css/res-random.css" />
+    <script src="../public/js/bar-random.js"></script>
+    <link rel="stylesheet" href="../public/css/bar-random.css"/>
   </head>
 
   <body>
     <header>
       <div class="top">
         <svg
-          onclick="location.href='res-list-june.html'"
           width="25px"
           height="25px"
           viewBox="0 0 16 16"
@@ -46,27 +45,21 @@
       <div class="main-nav">
         <ul class="nav">
           <li class="nav-item">
-            <a id="res" class="nav-link active" href="res-random.html">
-              <span class="active-ellipse"></span>밥약</a
-            >
+            <a id="bar" class="nav-link" href="bar-random.html">밥약</a>
           </li>
           <li class="nav-item">
-            <a id="bar" class="nav-link" href="#">뒤풀이</a>
+            <a id="res" class="nav-link active" href="result.html">
+                <span class="active-ellipse"></span>뒤풀이</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="mainbody">
       <div class="card">
-        <img
-          src="../public/img/밥집/정돈.jpg"
-          class="card-img-top"
-          id="img"
-          alt="..."
-        />
+        <img id="imgimg" src="http://blogfiles.naver.net/MjAxOTA5MjRfMjYy/MDAxNTY5MzM1MjAxMTM3.lr0UWf_nPfkIuw9yHiznFAWU6mfRemiJ_GfEqoYu_SIg.wk8VurG52mpDRVvG326woYPYFrY7442A505vmANkXs8g.JPEG.ekwjd373/IMG_2159.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
-          <p class="card-text" id="name">
-            정돈 대학로 본점
+          <p id="name" class="card-text">
+            술부심
           </p>
           <p class="rating">
             <span
@@ -110,7 +103,7 @@
       </div>
     </section>
     <section class="retry">
-      <button type="button" class="btn btn-secondary" onclick="toggleImg(0,13)">
+      <button type="button" class="btn btn-secondary" onclick="barToggleImg(0,19)">
         <svg
           width="16px"
           height="16px"
@@ -132,9 +125,9 @@
       </button>
     </section>
 
-    <section class="footer">
+    <section>
       <div class="bottom-nav">
-        <div onclick="location.href='#'" class="home-nav">
+        <div class="home-nav">
           <svg
             width="18px"
             height="20px"
@@ -155,7 +148,7 @@
             홈화면
           </div>
         </div>
-        <div onclick="location.href='res-list-june.html'" class="res-nav">
+        <div class="res-nav">
           <svg
             width="20px"
             height="20px"
@@ -173,7 +166,7 @@
             밥약
           </div>
         </div>
-        <div onclick="location.href='barList.html'" class="bar-nav">
+        <div class="bar-nav">
           <svg
             width="24px"
             height="20px"
@@ -192,13 +185,13 @@
           </div>
         </div>
 
-        <div onclick="location.href='res-random.html'" class="random-nav">
+        <div class="random-nav">
           <svg
             width="20px"
             height="20px"
             viewBox="0 0 16 16"
             class="bi bi-arrow-repeat"
-            fill="#5cb85c"
+            fill="#c3c3c3"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
