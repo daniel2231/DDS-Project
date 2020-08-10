@@ -127,12 +127,15 @@
         role="tabpanel"
         aria-labelledby="location-tab"
       >
-        <div id="map" style="width: 100%; height: 400px;"></div>
+      <div id="map" style="width: 100%; height: 400px; text-align: center;"onclick="javascript:mapfunction()">
+        지도를 확인하려면 클릭해주세요! 
+      </div>
       </div>
     </div>
 </div>
 <script>
-  var map = new naver.maps.Map("map", {
+  function mapfunction(){
+    var map = new naver.maps.Map("map", {
     center: new naver.maps.LatLng(37.5887233,126.9950599),
     zoom: 16,
   });
@@ -140,6 +143,7 @@
     position: map.center,
     map: map,
   });
+}
 </script>
     <!--부트스트랩 JS-->
     <script

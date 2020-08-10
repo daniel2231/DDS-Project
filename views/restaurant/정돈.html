@@ -8,7 +8,6 @@
       type="text/javascript"
       src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=fauafuq8dt"
     ></script>
-
     <!--부트스트랩 CSS-->
     <link
       rel="stylesheet"
@@ -63,17 +62,17 @@
           role="tab"
           aria-controls="location"
           aria-selected="false"
-          >지도</a
-        >
+          >지도
+          </a>
       </li>
     </ul>
-
     <div class="tab-content" id="myTabContent">
       <div
         class="tab-pane fade show active"
         id="menu"
         role="tabpanel"
         aria-labelledby="menu-tab"
+        
       >
       <table class="tab-menu">
         <tbody>
@@ -126,22 +125,24 @@
         class="tab-pane fade"
         id="location"
         role="tabpanel"
-        aria-labelledby="location-tab"
-      >
-        <div id="map" style="width: 100%; height: 400px;"></div>
-      </div>
+        aria-labelledby="location-tab">
+        <div id="map" style="width: 100%; height: 400px; text-align: center;"
+        onclick="javascript:mapfunction()">
+        지도를 확인하려면 클릭해주세요!
     </div>
+  </div>
+</div>
 </div>
 <script>
-  var map = new naver.maps.Map("map", {
-    center: new naver.maps.LatLng(37.5818019, 127.0011237),
-    zoom: 17,
-  });
-
-  var marker = new naver.maps.Marker({
-    position: map.center,
-    map: map,
-  });
+function mapfunction(){
+    window.dispatchEvent(new Event('resize'));
+        var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.5818019, 127.0011237),
+        zoom: 17,});
+        var marker = new naver.maps.Marker({
+        position: map.center,
+        map: map,
+})}
 </script>
     <!--부트스트랩 JS-->
     <script
@@ -159,8 +160,17 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <div class="callbtn">
-    <input type="button" id="call" value="바로 예약하기" onclick="location.href='tel:02-987-0924'">
+  <div class="callbtn">
+        <input type="button" id="call" value="바로 예약하기" onclick="location.href='tel:02-987-0924'">
+  </div>
   </div>
   </body>
 </html>
+
+
+<!--
+
+   if(test.attributes[6].value==='true'){
+          window.dispatchEvent(new Event('resize'));
+      }
+-->
